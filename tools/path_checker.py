@@ -116,7 +116,6 @@ def find_support_files(root, filename):
     paths = src_paths + match_links + urls
     
     for path in paths:
-        #if not(path.startswith('http:')) and not(path.startswith('mailto:')) and not(path.startswith('/resources/testharness')) and not(path.startswith('data')) and not(path.startswith('https:')) and not(path.startswith('/delay')) and not(path.startswith('javascript')):
         if is_actual_filepath(path):
             support_files.append(path)
             
